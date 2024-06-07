@@ -11,10 +11,6 @@ public class CameraSample : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-        //Player‚Ìî•ñ‚ğæ“¾
-        _player = GameObject.Find("Player");
-
         // MainCamera(©•ª©g)‚Æplayer‚Æ‚Ì‘Š‘Î‹——£‚ğ‹‚ß‚é
          _offset = transform.position - _player.transform.position;
 
