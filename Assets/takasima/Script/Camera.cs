@@ -12,7 +12,7 @@ public class CameraSample : MonoBehaviour
     void Start()
     {
 
-        //unitychan‚Ìî•ñ‚ğæ“¾
+        //Player‚Ìî•ñ‚ğæ“¾
         _player = GameObject.Find("Player");
 
         // MainCamera(©•ª©g)‚Æplayer‚Æ‚Ì‘Š‘Î‹——£‚ğ‹‚ß‚é
