@@ -6,6 +6,7 @@ public class Move : MonoBehaviour
 {
      Rigidbody _rigidBody;
     [SerializeField] float _MoveSpeed = 1f;
+    public int _MoveSpeedrightleft = 2;
     bool isStop = false;
 
     void Awake()
@@ -19,7 +20,7 @@ public class Move : MonoBehaviour
         //https://candle-stoplight-544.notion.site/4e021f226d584730b715626436ccc330
         if (!isStop)
         {
-            _rigidBody.AddForce (new Vector3 ((_MoveSpeed * -1), 0, 0));
+            _rigidBody.AddForce (new Vector3 ((_MoveSpeed * -1), 0, Input.GetAxis("Horizontal") * _MoveSpeedrightleft));
         }
         else if (isStop) 
         {
