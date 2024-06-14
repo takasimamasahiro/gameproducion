@@ -4,8 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Move : MonoBehaviour
 {
-    [SerializeField] Rigidbody _rigidBody;
-    float _MoveSpeed = 1f;
+     Rigidbody _rigidBody;
+    [SerializeField] float _MoveSpeed = 1f;
     bool isStop = false;
 
     void Awake()
